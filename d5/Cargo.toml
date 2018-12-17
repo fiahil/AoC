@@ -1,0 +1,7 @@
+[package]
+name = "aoc_d5"
+version = "0.1.0"
+authors = ["Quentin Leffray <leffray.quentin@bcg.com>"]
+edition = "2018"
+
+[dependencies]
