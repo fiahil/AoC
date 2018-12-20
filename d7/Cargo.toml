@@ -5,3 +5,5 @@ authors = ["Quentin Leffray <leffray.quentin@bcg.com>"]
 edition = "2018"
 
 [dependencies]
+regex = "1"
+threadpool = "1.7.1"
