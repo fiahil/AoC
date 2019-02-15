@@ -1,0 +1,9 @@
+[package]
+name = "d10"
+version = "0.1.0"
+authors = ["Quentin Leffray <leffray.quentin@bcg.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+piston_window = "0.89.0"
