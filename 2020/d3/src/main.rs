@@ -92,7 +92,7 @@ fn slide(mut map: Vec<Vec<Cell>>, slope: (usize, usize)) -> usize {
 fn main() -> Result<()> {
     let r = input::input(File::open("data/input.txt")?, transform)?;
 
-    // print_map(&r);
+    print_map(&r);
 
     let r = slide(r.clone(), (1, 1))
         * slide(r.clone(), (1, 3))
