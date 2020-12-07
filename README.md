@@ -1,5 +1,5 @@
 # AoC
-Advent of Code 2018
+Advent of Code puzzles solvers
 
-Note: Code quality in the projects presented here is very low, and do not represent in any case
+Note: The code quality in projects presented here is often low. It does not represent in any case
 what I usually produce in a professional setting.
