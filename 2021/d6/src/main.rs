@@ -38,7 +38,7 @@ fn main() -> Result<()> {
             println!("====  Test  ====");
             solver::test::part2(&test)?;
             println!("====  Run   ====");
-            solver::part2(&input)?;
+            solver::part2(&input, 256)?;
         }
         _ => {
             println!("==== Part 1 ====");
@@ -51,7 +51,7 @@ fn main() -> Result<()> {
             println!("====  Test  ====");
             solver::test::part2(&test)?;
             println!("====  Run   ====");
-            solver::part2(&input)?;
+            solver::part2(&input, 256)?;
         }
     }
 
