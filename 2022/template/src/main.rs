@@ -31,27 +31,27 @@ fn main() -> Result<()> {
             println!("====  Test  ====");
             solver::test::part1(&test)?;
             println!("====  Run   ====");
-            solver::part1(&input)?;
+            println!("{}", solver::part1(&input)?);
         }
         (false, true) => {
             println!("==== Part 2 ====");
             println!("====  Test  ====");
             solver::test::part2(&test)?;
             println!("====  Run   ====");
-            solver::part2(&input)?;
+            println!("{}", solver::part2(&input)?);
         }
         _ => {
             println!("==== Part 1 ====");
             println!("====  Test  ====");
             solver::test::part1(&test)?;
             println!("====  Run   ====");
-            solver::part1(&input)?;
+            println!("{}", solver::part1(&input)?);
 
             println!("==== Part 2 ====");
             println!("====  Test  ====");
             solver::test::part2(&test)?;
             println!("====  Run   ====");
-            solver::part2(&input)?;
+            println!("{}", solver::part2(&input)?);
         }
     }
 
