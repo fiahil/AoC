@@ -1,0 +1,60 @@
+# This file is managed by devopsify > update strategy : keep
+
+[tool.poetry]
+name = "aoc"
+version = "0.1.1"
+description = ""
+
+authors = [
+    "Quentin Leffray <leffray.quentin@bcg.com>"
+]
+
+readme = ""
+repository = ""
+
+
+[tool.poetry.dependencies]
+python = ">=3.8.1, <3.10"
+
+
+[tool.poetry.dev-dependencies]
+black = ">=22.12"
+flake8 = ">=6.0"
+isort = ">=5.11"
+pylint = ">=2.15"
+pytest = ">=7.2"
+pytest-cov = ">=4.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.main]
+# Specify a score threshold under which the program will exit with error.
+fail-under = 5
+# Files or directories to be skipped. They should be base names, not paths.
+ignore = [".git", "__pycache__", ".pytest_cache", "docs", "venv"]
+# Discover python modules and packages in the file system subtree.
+recursive = true
+# Use multiple processes to speed up Pylint. Specifying 0 will auto-detect the
+# number of processors available to use, and will cap the count on Windows to
+# avoid hangs.
+jobs = 0
+
+[tool.pylint."messages control"]
+disable = ["R", "C", "W"]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)7s] [%(filename)s:%(lineno)-3s] %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
