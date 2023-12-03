@@ -20,11 +20,7 @@ struct Draw {
 
 impl From<&str> for Games {
     fn from(input: &str) -> Self {
-        let mut games = Vec::new();
-
-        for game in input.lines() {
-            games.push(Game::from(game));
-        }
+        let games = input.lines().map(|line| Game::from(line)).collect();
 
         Games { games }
     }
