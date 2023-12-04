@@ -1,25 +1,23 @@
-use anyhow::Result;
-
-pub fn part1(input: &String) -> Result<i32> {
-    Ok(0)
+pub fn part1(input: &String) -> u32 {
+    0
 }
 
-pub fn part2(input: &String) -> Result<i32> {
-    Ok(0)
+pub fn part2(input: &String) -> u32 {
+    0
 }
 
 pub mod test {
-    use super::*;
+    pub fn part1(input: &String) -> u32 {
+        let r = super::part1(input);
+        assert_eq!(r, 1);
 
-    pub fn part1(input: &String) -> Result<()> {
-        assert_eq!(super::part1(input)?, 1);
-
-        Ok(())
+        r
     }
 
-    pub fn part2(input: &String) -> Result<()> {
-        assert_eq!(super::part2(input)?, 1);
+    pub fn part2(input: &String) -> u32 {
+        let r = super::part2(input);
+        assert_eq!(r, 1);
 
-        Ok(())
+        r
     }
 }
