@@ -7,17 +7,15 @@ pub fn part2(input: &String) -> u32 {
 }
 
 pub mod test {
-    pub fn part1(input: &String) -> u32 {
-        let r = super::part1(input);
+    #[test]
+    pub fn part1() {
+        let r = super::part1(&"".to_string());
         assert_eq!(r, 1);
-
-        r
     }
 
-    pub fn part2(input: &String) -> u32 {
-        let r = super::part2(input);
+    #[test]
+    pub fn part2() {
+        let r = super::part2(&"".to_string());
         assert_eq!(r, 1);
-
-        r
     }
 }
